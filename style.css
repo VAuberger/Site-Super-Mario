@@ -1,0 +1,311 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 30px;
+	color: white;
+}
+
+
+/* Background ------------------------------------------- */ 
+body {
+	background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: : fixed;
+}
+
+/* Menu ------------------------------------------------- */
+header {
+	width: 100vw;
+	height: 8vh;
+	background-color: #453A94;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	box-shadow: 0px 0px 2vw rgba(0,0,0,0.5);
+
+}
+
+/* Titre Site ------------------------------------------- */ 
+.TitreHeader{ 
+	font-family: 'Luckiest Guy', cursive;
+	color: #D1391F;
+	font-size: 70px;
+	margin-left: 20px;
+	align-items: center;
+}
+/*O w O*/ 
+
+.titremenu {
+	font-family: 'Luckiest Guy';
+	text-decoration: none;
+	margin-right: 30px;
+	color: #D1391F;
+}
+.titremenu:hover {
+	color: #D6BF19;
+	font-size: 20px;
+}
+
+
+/* Menu Burger ------------------------------------------ */
+.Menuburger {
+	font-size: 50px;
+	display: none;
+}
+
+#Switch {
+	display: none;
+}
+
+
+/* Label Block ? ---------------------------------------- */
+#Questionblock {
+	display: none;
+}
+
+.Reponseblock {
+	display: none;
+}
+
+#Questionblock:checked + .Reponseblock {
+	display: flex;
+	float: right;
+}
+
+/* Menu Fantome ------- --------------------------------- */
+.menupasla {
+	height: 8vh;
+}
+
+
+
+
+
+/* Colonne centrale ------------------------------------- */ 
+.Colonnecentrale {
+	width: 80vw;
+	min-height: 80vh;
+	background-image: linear-gradient(to top, #f43b47 0%, #453a94 50%);
+	margin-left: 10vw;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 2vw rgba(0,0,0,0.5);
+}
+
+/* Section 1 -------------------------------------------- */ 
+.Section1 {
+	width: 100%;
+	min-height: 40vh;
+	text-align: center;
+
+}
+
+.ImageSection1 {
+	width: 80%;
+	border-radius: 20px;
+}
+
+
+.Textsection1 {
+	padding: 20px;
+}
+
+
+
+
+/* Section 2 -------------------------------------------- */
+.Section2 {
+	width: 100%;
+	min-height: 40vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.cartesection2 {
+	width: 20%;
+	height: 20%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10%;
+}
+
+.Photosection2 {
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	margin-top: 2%;
+}
+
+.Photosection22 {
+	width: 67%;
+	margin-left: 17.5%;
+	margin-bottom: 10px;
+	margin-top: 2%;
+}
+
+.Photosection2:hover {
+	width: 85%;
+}
+
+
+.Photosection22:hover {
+	width: 72%;
+}
+
+
+
+
+/* Section 3 ------------------------------------------- */
+
+.Section3 {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.Blocsection3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	margin-left: 3vh;
+
+}
+
+.photosection3 {
+	border-radius: 20px;
+}
+
+
+.textsection3 {
+	margin-left: 20px;
+}
+
+
+
+
+
+/* Footer --------------------------------------------- */
+footer {
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Luckiest Guy';
+}
+
+footer a {
+	color: white;
+	margin-left: 30px;
+}
+footer a:hover {
+	font-size: 20px;
+	color: #D6BF19;
+}
+
+
+/* Media Queires -------------------------------------- */
+@media (max-width: 1000px) {
+	
+	.TitreHeader{
+		float: left;
+		align-items: center;
+		font-size: 50px;
+	}
+	
+	header {
+		display: block;
+	}
+
+	nav {
+		clear: both;
+		display: none;
+	}
+
+	.Menuburger {
+		display: block;
+		margin-right: 30px;
+		float: right;
+	}
+
+	#Switch:checked + nav{
+		display: flex;
+		flex-direction: column;
+		z-index: 9999;
+	}
+
+
+	.BlockJaune {
+		display: block;
+		float: left;
+		align-items: center;
+		margin-left: 10%;
+		margin-top: 1vh;
+	}
+
+	#Questionblock:checked + .Reponseblock {
+		display: flex;
+		float: left;
+		margin-top: 1vh;
+	}
+
+	.titremenu {
+		background-color: #453A94;
+		color: #D1391F;
+		text-align: center;
+		margin-right: 0px;
+		padding:  20px;
+		border-bottom: 4px solid black;
+		z-index: 2;
+	}
+
+
+	.Section2 {
+		flex-direction: column;
+	}
+
+
+	.cartesection2 {
+		width: 25%;
+		height: 20%;
+		margin-bottom: 70px;
+	}
+
+
+	.Section3 {
+		width: 50%;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding-left: 25%;
+	}
+
+	.Blocsection3 {
+		flex-direction: column;
+	}
+
+	.photosection3 {
+		width: 120%;
+		border-radius: 20px;
+	}
+
+	.textsection3 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.BlockJaune {
+		display: none;
+	}
+}
